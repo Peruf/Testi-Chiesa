@@ -12,9 +12,9 @@
   <div class="Drop">
     <button name="dropdown" class="button item"><div style="margin-left:5%">Inizio</div></button>
     <div class="ContDrop" name="dropdowntobedisplayed">
-      <a href="/Songsss/ACanaSiFaFesta.html" class="item button" id="ACanaSiFaFesta" name="show"><div class = "a" name="ACanaSiFaFesta">A Cana Si Fa Festa</div></a>
+      <a class="item button" id="ACanaSiFaFesta" name="show"><div class = "a" name="ACanaSiFaFesta">A Cana Si Fa Festa</div></a>
       <a class="item button" name="show"><div class = "a" name="AccendiInMe">Accendi In Me</div></a>
-      <a class="item button"><div class = "a" name="AcquaSiamoNoi">Acqua Siamo Noi</div></a>
+      <a class="item button" name="show"><div class = "a" name="AcquaSiamoNoi">Acqua Siamo Noi</div></a>
       <a class="item button"><div class = "a" name="PopoliTutti">Altissimo</div></a>
       <a class="item button"><div class = "a" name="PopoliTutti">Camminiamo Incontro Al Signore</div></a>
       <a class="item button"><div class = "a" name="PopoliTutti">Cantate Al Signore Un Canto</div></a>
@@ -291,50 +291,15 @@
 </div>
 <div class="a inv" name="tobeshowed" id="ACanaSiFaFesta1">
   <h2 class="titles">A CANA SI FA FESTA</h2>
-  A Cana si fa festa,<br>
-  un pranzo han preparato,<br>
-  le nozze sono pronte,<br>
-  Gesù hanno invitato.<br><br>
-  Gli apostoli e Maria<br>
-  non mancano al banchetto.<br>
-  C'è gioia ed allegria<br>
-  e tutto è assai perfetto.<br><br>
-  Che giorno di festa,<br>
-  ma che festa laggiù:<br>
-  c'è Maria ed anche Gesù.<br>
-  Che giorno di festa,<br>
-  ma che festa laggiù:<br>
-  c'è Maria ed anche Gesù.<br><br>
-  Ma ecco che Maria<br>
-  al figlio lì presente<br>
-  sussurra: "Non c'è vino,<br>
-  aiuta questa gente"<br><br>
-  Gesù farà qualcosa,<br>
-  Maria è già felice<br>
-  e chiede a tutti gli altri<br>
-  di fare quel che dice.<br><br>
-  Gesù comanda ai servi:<br>
-  "All'acqua presto andate,<br>
-  riempite queste giare<br>
-  e poi da me tornate."<br><br>
-  Così con gran stupore<br>
-  in vino assai squisito<br>
-  quell'acqua ha trasformato<br>
-  e in tavola è servito.<br><br>
-  Che giorno di festa,<br>
-  ma che festa laggiù:<br>
-  che miracolo ha fatto Gesù.<br>
-  Che giorno di festa,<br>
-  ma che festa laggiù:<br>
-  che miracolo ha fatto Gesù.<br>
-  Che miracolo ha fatto Gesù.<br>
+  <div id="list" style="font-size: 24px;"><p ><?php $myfile = fopen("Songsss/ACanaSiFaFesta.txt", "r") or die("Unable to open file!");echo fread($myfile,filesize("Songsss/ACanaSiFaFesta.txt"));fclose($myfile); ?></p></div>
 </div>
-<div class="a inv" name="tobeshowed" id="ACanaSiFaFesta1">
+<div class="a inv" name="tobeshowed">
   <h2 class="titles">ACCENDI IN ME</h2>
- 
-<div id="list" style="font-size: 24px;"><p ><?php $myfile = fopen("accendinme.txt", "r") or die("Unable to open file!");
-echo fread($myfile,filesize("accendinme.txt"));
-fclose($myfile); ?></p></div>
+  <div id="list" style="font-size: 24px;"><p ><?php $myfile = fopen("Songsss/accendinme.txt", "r") or die("Unable to open file!");echo fread($myfile,filesize("Songsss/accendinme.txt"));fclose($myfile); ?></p></div>
+</div>
+<div class="a inv" name="tobeshowed">
+  <h2 class="titles">BENEDIR&Ograve;</h2>
+  <div id="list" style="font-size: 24px;"><p ><?php $myfile = fopen("Songsss/Benediro.txt", "r") or die("Unable to open file!");echo fread($myfile,filesize("Songsss/Benediro.txt"));fclose($myfile); ?></p></div>
 </div>
 </header>
 <footer>  <script type="text/javascript" src="script.js"></script> </footer>

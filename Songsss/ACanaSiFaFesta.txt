@@ -1,11 +1,4 @@
-<DOCTYPE html>
-<html>
-<head>
-  <link href="../stile.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <h2 class="titles">A CANA SI FA FESTA</h2>
-  A Cana si fa festa,<br>
+A Cana si fa festa,<br>
   un pranzo han preparato,<br>
   le nozze sono pronte,<br>
   Ges&ugrave; hanno invitato.<br><br>
@@ -42,5 +35,3 @@
   ma che festa laggi&ugrave;:<br>
   che miracolo ha fatto Ges&ugrave;.<br>
   Che miracolo ha fatto Ges&ugrave;.<br>
-</body>
-</html>
