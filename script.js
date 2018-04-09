@@ -3,28 +3,42 @@ function Dropdown(e, index) {
   tobedisplayed.classList.toggle("show")
 }
 
-window.onclick = function(event) {
-  if (!event.target.matches('.button')) {
-
-    var dropdowns = document.getElementsByClassName("ContDrop");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+function reset() {
+    var toReset = Array.from(document.getElementsByClassName("showsong"))
+    toReset.forEach( el => {
+        el.classList.remove("showsong")
+    })
 }
 
+function Show(e, index) {
+  var tobedisplayed = document.getElementsByName("tobeshowed")[index]
+  reset()
+  tobedisplayed.classList.toggle("showsong")
+}
+
+/*function LoadSong(e){
+  e.preventDefault()
+  var ajax = new XMLHttpRequest();
+  ajax.open();
+  ajax.send();
+  e.target.href
+}*/
 
 window.addEventListener("load", function() {
   var dropdowns = Array.from(document.getElementsByName("dropdown"))
-
+  var links = Array.from(document.getElementsByName("show"))
+  //dropdown
   dropdowns.forEach( (el, index) => {
     el.addEventListener("click", function(e) {
       var i = index
       Dropdown(e, i)
+    })
+  })
+
+    links.forEach( (el, index) => {
+    el.addEventListener("click", function(e) {
+      var i = index
+      Show(e, i)
     })
   })
 })
