@@ -16,14 +16,6 @@ function Show(e, index) {
   tobedisplayed.classList.toggle("showsong")
 }
 
-/*function LoadSong(e){
-  e.preventDefault()
-  var ajax = new XMLHttpRequest();
-  ajax.open();
-  ajax.send();
-  e.target.href
-}*/
-
 window.addEventListener("load", function() {
   var dropdowns = Array.from(document.getElementsByName("dropdown"))
   var links = Array.from(document.getElementsByName("show"))
